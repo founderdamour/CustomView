@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">CustomView</string>
+    <string name="progress_ring">圆形的进度条</string>
+    <string name="activity_progress_ring_back">返回</string>
+    <string name="activity_progress_ring_score">分数</string>
+</resources>
