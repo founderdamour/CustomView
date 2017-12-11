@@ -5,6 +5,7 @@ import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Rect;
 import android.graphics.RectF;
 import android.support.annotation.IntRange;
 import android.support.annotation.Nullable;
@@ -37,6 +38,7 @@ public class ProgressRing extends View {
 
     private Paint bgPaint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.DITHER_FLAG); // 背景画笔
     private Paint progressPaint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.DITHER_FLAG); // 进度画笔
+    private Paint mTextPaint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.DITHER_FLAG); // 文字画笔
 
     private RectF pRectF;  // 矩形
 
@@ -93,6 +95,10 @@ public class ProgressRing extends View {
         progressPaint.setStyle(Paint.Style.STROKE);
         progressPaint.setStrokeCap(Paint.Cap.ROUND);
         progressPaint.setStrokeWidth(progressWidth);
+
+        mTextPaint.setAntiAlias(true);
+        mTextPaint.setColor(Color.RED);
+        mTextPaint.setTextSize(50);
     }
 
     @Override
@@ -117,10 +123,27 @@ public class ProgressRing extends View {
         }
         drawBg(canvas);
         drawProgress(canvas);
+        drawText(canvas);
         if (curProgress < progress) {
             curProgress++;
             postInvalidate();
         }
+    }
+
+    /**
+     * 画文字
+     *
+     * @param canvas 画板
+     */
+    private void drawText(Canvas canvas) {
+        //画文字
+        String stepText = curProgress + "分";
+        Rect textBounds = new Rect();
+        mTextPaint.getTextBounds(stepText, 0, stepText.length(), textBounds);
+        int dx = getWidth() / 2 - textBounds.width() / 2;//文字的起始位置
+        //基线
+        int baseLine = getHeight() / 2 + textBounds.height() / 3;
+        canvas.drawText(stepText, dx, baseLine, mTextPaint);
     }
 
     /**

@@ -28,21 +28,23 @@
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_gravity="center"
-                app:pr_bg_end_color="#00ffffff"
-                app:pr_bg_mid_color="#33ffffff"
-                app:pr_bg_start_color="#00ffffff"
-                app:pr_progress="80"
-                app:pr_progress_end_color="#D9B262"
-                app:pr_progress_start_color="#00ffffff"
-                app:pr_progress_width="8dp"/>
+                app:pr_bg_end_color="#22ff0000"
+                app:pr_bg_mid_color="#22ff0000"
+                app:pr_bg_start_color="#22ff0000"
+                app:pr_progress="90"
+                app:pr_progress_end_color="@color/colorAccent"
+                app:pr_progress_start_color="@color/colorAccent"
+                app:pr_progress_width="8dp"
+                app:pr_start_angle="270"
+                app:pr_sweep_angle="360"/>
 
         </LinearLayout>
 
-        <TextView
+        <!--<TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="@string/activity_progress_ring_score"/>
+            android:text="@string/activity_progress_ring_score"/>-->
 
     </RelativeLayout>
 
