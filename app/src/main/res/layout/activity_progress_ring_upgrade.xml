@@ -23,7 +23,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="15dp"
             app:in_bg_color="@color/colorAccent"
-            app:out_bg_color="@color/colorAccent"
+            app:out_bg_color="@color/colorPrimaryDark"
             app:text_color="@color/colorAccent"
             app:text_size="40sp"/>
 
