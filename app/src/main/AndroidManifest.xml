@@ -23,6 +23,10 @@
             android:name=".activity.ProgressRingActivity"
             android:screenOrientation="portrait"/>
 
+        <activity
+            android:name=".activity.ProgressRingUpgradeActivity"
+            android:screenOrientation="portrait"/>
+
     </application>
 
 </manifest>

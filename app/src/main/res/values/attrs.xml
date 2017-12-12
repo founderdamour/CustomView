@@ -24,4 +24,17 @@
         <attr name="pr_show_anim" format="boolean"/>
     </declare-styleable>
 
+    <declare-styleable name="ProgressRingUpgradeView">
+        // 外圆的背景颜色
+        <attr name="out_bg_color" format="color"/>
+        // 内园的背景颜色
+        <attr name="in_bg_color" format="color"/>
+        // 园的宽度
+        <attr name="circle_width" format="dimension"/>
+        // 字体颜色
+        <attr name="text_color" format="color"/>
+        // 字体大小
+        <attr name="text_size" format="dimension"/>
+    </declare-styleable>
+
 </resources>

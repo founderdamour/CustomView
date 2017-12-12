@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">自定义View</string>
     <string name="progress_ring">圆形的进度条</string>
+    <string name="progress_ring_upgrade">圆形的进度条升级版</string>
     <string name="activity_progress_ring_back">返回</string>
     <string name="activity_progress_ring_score">分数</string>
+    <string name="draw_paint">画笔宽度10dp</string>
+    <string name="big_circle">大圆弧</string>
+    <string name="small_circle">小圆弧</string>
+    <string name="current_step">当前步数%s</string>
+    <string name="paint_width">画笔宽度%sdp</string>
 </resources>

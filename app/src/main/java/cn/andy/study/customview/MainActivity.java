@@ -7,10 +7,12 @@ import android.view.View;
 import android.widget.Button;
 
 import cn.andy.study.customview.activity.ProgressRingActivity;
+import cn.andy.study.customview.activity.ProgressRingUpgradeActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button progressRingBtn;
+    private Button progressRingUpgradeBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,11 +24,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initView() {
         progressRingBtn = findViewById(R.id.progress_ring);
+        progressRingUpgradeBtn = findViewById(R.id.progress_ring_upgrade);
 
     }
 
     private void initListener() {
         progressRingBtn.setOnClickListener(this);
+        progressRingUpgradeBtn.setOnClickListener(this);
     }
 
     @Override
@@ -34,6 +38,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.progress_ring:
                 startActivity(new Intent(getBaseContext(), ProgressRingActivity.class));
+                break;
+            case R.id.progress_ring_upgrade:
+                startActivity(new Intent(getBaseContext(), ProgressRingUpgradeActivity.class));
                 break;
         }
     }
