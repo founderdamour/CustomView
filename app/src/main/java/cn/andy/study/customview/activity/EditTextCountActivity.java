@@ -10,17 +10,15 @@ import cn.andy.study.customview.viewinject.OnClick;
 import cn.andy.study.customview.viewinject.ViewInjecter;
 
 /**
- * 带指示的SeekBar
- * <p>
  * Created by yangzhizhong
  */
 
-public class UiSeekBarActivity extends Activity {
+public class EditTextCountActivity extends Activity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ui_seek_bar);
+        setContentView(R.layout.activity_edit_text_count);
         ViewInjecter.inject(this);
     }
 

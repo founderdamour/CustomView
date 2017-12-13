@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_progress_ring_back"/>
+
+    <cn.andy.study.customview.view.EditTextCount
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:hint="请输入内容"
+        app:hint_color="@color/colorAccent"
+        app:max_length="66"
+        app:min_height="200dp"
+        app:text="默认输入的文字"
+        app:text_color="@color/colorAccent"
+        app:type="0"/>
+
+</LinearLayout>
