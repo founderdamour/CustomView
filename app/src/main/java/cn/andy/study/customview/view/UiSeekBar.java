@@ -143,9 +143,6 @@ public class UiSeekBar extends android.support.v7.widget.AppCompatSeekBar {
             float bm_x = rect_seek.width() * getProgress() / getMax();
             //计算文字的中心位置在bitmap
             float text_x = rect_seek.width() * getProgress() / getMax() + (bmpWidth - numTextWidth) / 2;
-            //还应该减去文字的高度
-            float text_y = bmpHeight / 2;
-            float text_center = bmpHeight / 2 - fm.descent + (fm.descent - fm.ascent) / 2;
             switch (type) {
                 case Gravity.TOP:
                     canvas.drawBitmap(bm, bm_x, 0, bmPaint);
