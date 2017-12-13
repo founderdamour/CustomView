@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yangzhizhong="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.andy.study.customview.view.UiSeekBar
+        android:id="@+id/ui_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="20dp"
+        android:progressDrawable="@drawable/seek"
+        android:thumb="@drawable/seek_instrucrt"
+        yangzhizhong:numBackground="@drawable/show"
+        yangzhizhong:numScale="0.16"
+        yangzhizhong:numTextColor="#FFFFFF"
+        yangzhizhong:numTextFormat="元"
+        yangzhizhong:numType="top"/>
+
+    <cn.andy.study.customview.view.UiSeekBar
+        android:id="@+id/ui_seekbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:maxHeight="20dp"
+        android:progressDrawable="@drawable/seek"
+        android:splitTrack="false"
+        android:thumb="@drawable/seek_instrucrt"
+        yangzhizhong:numBackground="@drawable/show"
+        yangzhizhong:numTextColor="#FFFFFF"
+        yangzhizhong:numType="bottom"/>
+
+</LinearLayout>

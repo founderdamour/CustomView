@@ -28,6 +28,13 @@
                 android:layout_height="wrap_content"
                 android:text="@string/progress_ring_upgrade"/>
 
+            <Button
+                android:id="@+id/ui_seek_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_ui_seek_bar"
+                android:visibility="gone"/>
+
         </LinearLayout>
 
     </ScrollView>

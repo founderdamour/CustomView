@@ -9,4 +9,5 @@
     <string name="small_circle">小圆弧</string>
     <string name="current_step">当前步数%s</string>
     <string name="paint_width">画笔宽度%sdp</string>
+    <string name="activity_ui_seek_bar">自定义SeekBar</string>
 </resources>
