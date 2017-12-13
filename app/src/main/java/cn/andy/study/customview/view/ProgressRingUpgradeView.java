@@ -136,7 +136,8 @@ public class ProgressRingUpgradeView extends View {
         if (mNumMax <= 0) return;
         RectF rectF = new RectF(mPaintOutWidth / 2, mPaintOutWidth / 2, getWidth() - mPaintOutWidth / 2, getHeight() - mPaintOutWidth / 2);
         float sweepAngle = (float) mNumCurrent / mNumMax;
-        canvas.drawArc(rectF, 135, sweepAngle * 270, false, mPaintIn);
+        // 画圆弧的范围
+        canvas.drawArc(rectF, 90, sweepAngle * 360, false, mPaintIn);
     }
 
     /**
@@ -164,7 +165,8 @@ public class ProgressRingUpgradeView extends View {
     private void drawOutCircle(Canvas canvas) {
         //外圆弧,因为画笔有一定的宽度，所有画圆弧的范围要比View本身的大小稍微小一些，不然画笔画出来的东西会显示不完整
         RectF rectF = new RectF(mPaintOutWidth / 2, mPaintOutWidth / 2, getWidth() - mPaintOutWidth / 2, getHeight() - mPaintOutWidth / 2);
-        canvas.drawArc(rectF, 135, 270, false, mPaintOut);
+        // 画圆弧大小
+        canvas.drawArc(rectF, 90, 360, false, mPaintOut);
     }
 
 
