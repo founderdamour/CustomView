@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import cn.andy.study.customview.activity.EditTextCountActivity;
+import cn.andy.study.customview.activity.GooViewActivity;
 import cn.andy.study.customview.activity.ProgressRingActivity;
 import cn.andy.study.customview.activity.ProgressRingUpgradeActivity;
 import cn.andy.study.customview.activity.UiSeekBarActivity;
@@ -22,6 +23,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @FindViewById(R.id.edit_text_count)
     private Button editTextCount;
 
+    @FindViewById(R.id.goo_view)
+    private Button gooView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +39,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         progressRingBtn = findViewById(R.id.progress_ring);
         progressRingUpgradeBtn = findViewById(R.id.progress_ring_upgrade);
         seekBar = findViewById(R.id.ui_seek_bar);
-
     }
 
     private void initListener() {
@@ -43,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         progressRingUpgradeBtn.setOnClickListener(this);
         seekBar.setOnClickListener(this);
         editTextCount.setOnClickListener(this);
+        gooView.setOnClickListener(this);
     }
 
     @Override
@@ -59,6 +63,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.edit_text_count:
                 startActivity(new Intent(getBaseContext(), EditTextCountActivity.class));
+                break;
+            case R.id.goo_view:
+                startActivity(new Intent(getBaseContext(), GooViewActivity.class));
                 break;
         }
     }

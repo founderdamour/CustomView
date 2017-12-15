@@ -11,4 +11,5 @@
     <string name="paint_width">画笔宽度%sdp</string>
     <string name="activity_ui_seek_bar">自定义SeekBar</string>
     <string name="activity_edit_text_count">输入框文字统计</string>
+    <string name="activity_goo_view">粘性控件</string>
 </resources>
